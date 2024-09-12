@@ -16,7 +16,6 @@ let person = {
 // 3. 객체 프로퍼티를 다루는 방법
 // 3.1 특정 프로퍼티에 접근(점 표기법, 괄호 표기법)
 let name = person.name;
-
 let age = person["age"];
 
 let property = "hobby";
@@ -36,5 +35,5 @@ delete person["favoriteFood"];
 
 // 3.5 프로퍼티의 존재 유무를 확인하는 방법 (in 연산자)
 let result1 = "name" in person;
-let result2 = "cat" in person;
+let result2 = "cat" in person; // undefined
 console.log(result2);

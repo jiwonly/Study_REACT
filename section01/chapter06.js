@@ -4,7 +4,7 @@
 let num = 10;
 let str = "20";
 
-const result = num + str;
+const result = num + str; // 1020
 
 // 2. 명시적 형 변환
 // -> 프로그래머 내장함수 등을 이용해서 직접 형 변환을 명시

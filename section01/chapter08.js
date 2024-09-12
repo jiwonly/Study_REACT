@@ -16,7 +16,7 @@ let userNickName = "ysjjw";
 let displayName = userName ?? userNickName; // 유저 네임이 있으면 유저 네임으로, 없으면 닉네임으로
 
 // 2. typeof 연산자
-// -> 값의 타입을 문자열로 변환하는 기능을 하는 연산자
+// -> 변수의 자료형을 확인할 수 O
 
 let var7 = 1; // number
 var7 = true; // boolean
@@ -26,7 +26,7 @@ let t1 = typeof var7; // string
 
 // 3. 삼항 연산자
 // -> 항을 3개 사용하는 연산자
-// -> 조건식을 이용해서 참, 거짓일 떄의 값을 다르게 변환
+// -> 조건식을 이용해서 참, 거짓일 때의 값을 다르게 변환
 let var8 = 10;
 
 // 요구사항 : 변수 res에 var8의 값이 짝수 -> "짝", 홀수 -> "홀"

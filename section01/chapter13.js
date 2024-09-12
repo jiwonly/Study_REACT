@@ -1,4 +1,6 @@
 // 1. 콜백함수
+// 함수를 다른 함수의 인수로 전달
+
 function main(value) {
   //   console.log(1);
   //   console.log(2);
@@ -7,7 +9,7 @@ function main(value) {
 }
 
 main(() => {
-  //   console.log("I am sub");
+  //   console.log("I am sub"); // 함수를 인수로
 });
 
 // 2. 콜백함수의 활용
