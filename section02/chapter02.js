@@ -1,16 +1,16 @@
-// function returnFalse() {
-//   console.log("False 함수");
-//   return undefined;
-// }
+function returnFalse() {
+  console.log("False 함수");
+  return undefined;
+}
 
-// function returnTrue() {
-//   console.log("True 함수");
-//   return 10;
-// }
+function returnTrue() {
+  console.log("True 함수");
+  return 10;
+}
 
-// console.log(returnFalse() && returnTrue()); // 단락 평가 작동
-// console.log(returnTrue() && returnFalse()); // 단락 평가 비작동
-// console.log(returnTrue() || returnFalse()); // 단락 평가 작동
+console.log(returnFalse() && returnTrue()); // 단락 평가 작동
+console.log(returnTrue() && returnFalse()); // 단락 평가 비작동
+console.log(returnTrue() || returnFalse()); // 단락 평가 작동
 
 // 단락 평가 활용 사례
 function printName(person) {
