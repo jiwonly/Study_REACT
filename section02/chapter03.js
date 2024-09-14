@@ -1,4 +1,6 @@
 // 1. 배열의 구조 분해 할당 (대괄호 이용)
+// 배열의 길이보다 할당할 변수의 개수가 더 많은 경우
+// undefined가 할당됨
 let arr = [1, 2, 3];
 
 let [one, two, three, four = 4] = arr;
