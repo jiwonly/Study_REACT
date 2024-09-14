@@ -36,10 +36,8 @@ add10(0)
     console.log(error);
   });
 
-// then 메서드
-// -> 그 후에
-// promise가 성공했을 때만 실행된다.
-// promise가 실패했을 때 -> catch
+// then 메서드 : promise가 성공했을 때만 실행된다.
+// catch 메서드 : promise가 실패했을 때만 실행된다.
 // 연결 가능!
 
 // promise
