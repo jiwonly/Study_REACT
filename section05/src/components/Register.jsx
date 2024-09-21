@@ -15,15 +15,15 @@ const Register = () => {
     bio: "",
   });
 
-  const countRef = useRef(0);
-  const inputRef = useRef();
+  const countRef = useRef(0); // 폼의 입력 변화 횟수 추적
+  const inputRef = useRef(); // 이름 입력 필드에 접근해 포커스 제어하는 데 사용
 
   const onChange = (e) => {
-    countRef.current++;
+    countRef.current++; // 입력필드 값이 변경될 때마다 1씩 증가
     console.log(countRef.current);
 
     setInput({
-      ...input,
+      ...input, // 기존 상태 유지
       [e.target.name]: e.target.value,
     });
   };
@@ -31,7 +31,7 @@ const Register = () => {
   const onSubmit = () => {
     if (input.name === "") {
       // 이름을 입력하는 DOM 요소 포커스
-      inputRef.current.focus();
+      inputRef.current.focus(); // 비어있으면 포커스
     }
   };
 
@@ -49,7 +49,7 @@ const Register = () => {
       </div>
       <div>
         <input
-          name="brith"
+          name="birth"
           value={input.birth}
           onChange={onChange}
           type="date"
