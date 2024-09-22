@@ -13,7 +13,7 @@ function App() {
   // 1. 마운트 : 탄생
   useEffect(() => {
     console.log("mount");
-  }, []); // 처음 이후에 호츌되지 X
+  }, []); // 처음 이후에 호출되지 X
 
   // 2. 업데이트 : 변화, 리렌더링
   useEffect(() => {
