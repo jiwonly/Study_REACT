@@ -35,6 +35,9 @@ function reducer(state, action) {
       );
     case "DELETE":
       return state.filter((item) => item.id !== action.targetId);
+    // filter : 자바스크립트 배열의 내장 함수
+    // 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환함
+    // false면 버림
     default:
       return state;
   }
