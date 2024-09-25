@@ -31,7 +31,7 @@ function freezeFood(food, callback) {
 }
 
 orderFood((food) => {
-  console.log(food);
+  console.log(food); // 3초 뒤에 출력
   cooldownFood(food, (cooldownedFood) => {
     console.log(cooldownedFood);
 
