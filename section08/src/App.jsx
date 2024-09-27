@@ -1,4 +1,4 @@
-import { useRef, useReducer } from "react";
+import { useRef, useReducer, useState, useCallback } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Editor from "./components/Editor";
@@ -47,7 +47,8 @@ function App() {
   const [todos, dispatch] = useReducer(reducer, mockData);
   const idRef = useRef(3); // 현재 id가 3개 있다.
 
-  const onCreate = (content) => {
+  // mount 되었을 때만 딱 한 번 실행
+  const onCreate = useCallback((content) => {
     dispatch({
       type: "CREATE",
       data: {
@@ -57,21 +58,21 @@ function App() {
         date: new Date().getTime(),
       },
     });
-  };
+  }, []);
 
-  const onUpdate = (targetId) => {
+  const onUpdate = useCallback((targetId) => {
     dispatch({
       type: "UPDATE",
       targetId: targetId,
     });
-  };
+  }, []);
 
-  const onDelete = (targetId) => {
+  const onDelete = useCallback((targetId) => {
     dispatch({
       type: "DELETE",
       targetId: targetId,
     });
-  };
+  }, []);
 
   return (
     <div className="App">
